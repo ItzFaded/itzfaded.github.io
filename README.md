@@ -1,6 +1,6 @@
 # deathtrip
 Deathrip challange
-Hei hei 
+
 
 
 # VIKTIG INFO!!
