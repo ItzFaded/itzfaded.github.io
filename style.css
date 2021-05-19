@@ -1,3 +1,10 @@
 body {background-color: black!important;}
 body div h4 {color: antiquewhite;}
 img#imglogo {width: 10%; height: 10%;}
+
+div#start {
+margin: auto;
+width: 60%;
+border: 5px solid #FFFF00;
+padding: 10px;
+}

@@ -11,7 +11,7 @@
 <body>
     <div id="start">
         <div id="buttons">
-            <a href="/start/" class="btn btn-primary stretched-link">Start Deathtrip</a>
+            <a href="start/" class="btn btn-primary stretched-link">Start Deathtrip</a>
         </div>
         <img id="imglogo" src="deathtrip-logo.png"></img>
         <img id="imglogo" src="ungitrafikken_color_alt.png"></img>
