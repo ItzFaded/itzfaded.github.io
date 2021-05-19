@@ -12,24 +12,6 @@
     </head>
     <body>
         
-        <!--<div class=introcontainer>
-            <div class="intro">
-                <?php require("mov/vid.php")?>
-    
-            </div>
-            <script src="jquery-1.11.2.min.js"></script>
-            <script src="moment.js"></script>
-            <script src="jquery.countdown.min.js"></script>
-            <script>
-                $(document).ready(function () {
-                    var nowPlus30Seconds = moment().add('10', 'seconds').format('YYYY/MM/DD HH:mm:ss');
-
-                        $('.count1').countdown(nowPlus30Seconds)
-                        .on('update.countdown', function (event) { $(this).html(event.strftime('%Y : %D : %H : %M : %S')); })
-                        .on('finish.countdown', function () { $('#intro').hide(); });
-                        });
-            </script>
-        </div>-->
         <div class="maycontainer"><!--column-->
         <div class="card" style="width:400px">
             <h1 id="h1header">Sjåfør</h1>
@@ -39,22 +21,12 @@
                 <h4 class="crad-title">hello</h4>
             <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
             <!--<button id='choice' class="btn btn-primary stretched-link" onclick="hidehidden()">Hello</button>-->
-            <a onclick="hidehidden()" class="btn btn-primary stretched-link" id="choice4">drikker du ikke?</a>
+            <button onclick="hidehidden()" class="btn btn-primary stretched-link" id="choice4">drikker du ikke?</a>
                 <div id="hidden" style="display: none"><p class="card-text">You can't see this</p></div>
             </div>
         </div>
     </div>
 
-</div>
-
-<div id="secret-overlay">
-    <div id="secret-content">
-        <h1>You've found a secret!</h1>
-        <br>
-        <a href="secret.html" style="text-decoration: none;">What could it be?</a>
-        <br>
-        <a style="text-decoration: none; font-size: 10px; cursor: pointer;" onclick="hide()"> Actually, take me back</a>
-    </div>
 </div>
 
 <style>
@@ -78,5 +50,32 @@
             #May-hello{color: grey;}
             </style>
 <script src="actions.js"></script>
+<script>
+addEventListener("click", function() {
+    var
+          el = document.documentElement
+        , rfs =
+               el.requestFullScreen
+            || el.webkitRequestFullScreen
+            || el.mozRequestFullScreen
+    ;
+    rfs.call(el);
+});
+// Find the right method, call on correct element
+function launchFullScreen(element) {
+  if(element.requestFullScreen) {
+    element.requestFullScreen();
+  } else if(element.mozRequestFullScreen) {
+    element.mozRequestFullScreen();
+  } else if(element.webkitRequestFullScreen) {
+    element.webkitRequestFullScreen();
+  }
+}
+
+// Launch fullscreen for browsers that support it!
+launchFullScreen(document.documentElement); // the whole page
+launchFullScreen(document.getElementById("videoElement")); // any individual element
+
+</script>
 </body>
 </html>
