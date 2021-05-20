@@ -11,6 +11,7 @@
         <script src="bootstrap.min.js"></script>
     </head>
     <body>
+<<<<<<< HEAD
 
         <!--<div class=introcontainer>
             <div class="intro">
@@ -30,30 +31,30 @@
                         });
             </script>
         </div>-->
+=======
+        
+>>>>>>> 1cec736d6cabdc462a8d5c05e80ef2f9f30b2026
         <div class="maycontainer"><!--column-->
         <div class="card" style="width:400px">
             <h1 id="h1header">Tor</h1>
             <img class="card-img-top" src="avatar.png" alt="Card image" style="width:100%">
             <div class="card-body">
             <h4 class="card-title">Lynx</h4>
+<<<<<<< HEAD
             <p class="card-text">Du har bestemt deg for å holde deg hjemme denne fredagen og er klar til å drikke en saftig boks med Øl...</p>
             <!--<button id='choice' class="btn btn-primary stretched-link" onclick="hidehidden()">Hello</button>-->
             <a onclick="hidehidden()" href="Valg 1/index.html" class="btn btn-primary stretched-link" id="choice4">Start historien</a>
+=======
+                <h4 class="crad-title">hello</h4>
+            <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+            <!--<button id='choice' class="btn btn-primary stretched-link" onclick="hidehidden()">Hello</button>-->
+            <button onclick="hidehidden()" class="btn btn-primary stretched-link" id="choice4">drikker du ikke?</a>
+>>>>>>> 1cec736d6cabdc462a8d5c05e80ef2f9f30b2026
                 <div id="hidden" style="display: none"><p class="card-text">You can't see this</p></div>
             </div>
         </div>
     </div>
 
-</div>
-
-<div id="secret-overlay">
-    <div id="secret-content">
-        <h1>You've found a secret!</h1>
-        <br>
-        <a href="secret.html" style="text-decoration: none;">What could it be?</a>
-        <br>
-        <a style="text-decoration: none; font-size: 10px; cursor: pointer;" onclick="hide()"> Actually, take me back</a>
-    </div>
 </div>
 
 <style>
@@ -77,5 +78,32 @@
             #May-hello{color: grey;}
             </style>
 <script src="actions.js"></script>
+<script>
+addEventListener("click", function() {
+    var
+          el = document.documentElement
+        , rfs =
+               el.requestFullScreen
+            || el.webkitRequestFullScreen
+            || el.mozRequestFullScreen
+    ;
+    rfs.call(el);
+});
+// Find the right method, call on correct element
+function launchFullScreen(element) {
+  if(element.requestFullScreen) {
+    element.requestFullScreen();
+  } else if(element.mozRequestFullScreen) {
+    element.mozRequestFullScreen();
+  } else if(element.webkitRequestFullScreen) {
+    element.webkitRequestFullScreen();
+  }
+}
+
+// Launch fullscreen for browsers that support it!
+launchFullScreen(document.documentElement); // the whole page
+launchFullScreen(document.getElementById("videoElement")); // any individual element
+
+</script>
 </body>
 </html>

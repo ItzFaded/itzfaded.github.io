@@ -1,0 +1,14 @@
+<div>
+    <button class="btn btn-primary stretched-link" onclick="closeFullscreen();">Exit!</button>
+    <script>
+        function closeFullscreen() {
+            if (document.exitFullscreen) {
+                document.exitFullscreen();
+            } else if (document.webkitExitFullscreen) { /* Safari */
+                document.webkitExitFullscreen();
+            } else if (document.msExitFullscreen) { /* IE11 */
+                document.msExitFullscreen();
+            }
+            }
+</script>
+</div>
