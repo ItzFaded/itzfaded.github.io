@@ -21,6 +21,11 @@ h1    {
   font-size: 60px;
 }
 
+a   {
+  font-size: 60px;
+}
+/* Elias edit END */
+
 /* Float four columns side by side */
 .maycontainer {
     float: left;
